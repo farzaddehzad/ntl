@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTL — Nordic Travel Luggage</title>
+  <meta name="description" content="Resväskor i lätt och slagtålig PP-plast. Sex färger, fyra storlekar. Beställ enkelt via WhatsApp.">
+  <meta name="theme-color" content="#0b1f38">
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <link rel="apple-touch-icon" href="images/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+  <div id="setupNote"></div>
+
+  <!-- TOP NAV -->
+  <header class="topnav" id="topnav">
+    <div class="topnav-inner">
+      <a href="#" class="brand" aria-label="NTL startsida">
+        <img src="images/logo-top.png" alt="NTL – Nordic Travel Luggage">
+      </a>
+
+      <nav class="nav-main" aria-label="Huvudmeny">
+        <a href="#farger" class="nav-link">Färger</a>
+        <a href="#storlekar" class="nav-link">Storlekar</a>
+        <a href="#detaljer" class="nav-link">Detaljer</a>
+        <a href="#material" class="nav-link">Varför PP</a>
+        <a href="#kontakt" class="nav-link">Kontakt</a>
+      </nav>
+
+      <div class="topnav-actions">
+        <a href="#" target="_blank" rel="noopener" class="btn btn-wa btn-sm wa-general" data-wa-icon="16">Beställ</a>
+        <button class="hamburger" id="hamburger" aria-label="Öppna meny" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- DRAWER (mobil) -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Meny">
+    <div class="drawer-head">
+      <img src="images/logo-top.png" alt="NTL">
+      <button class="drawer-close" id="drawerClose" aria-label="Stäng meny">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#" class="drawer-link">Hem</a>
+      <a href="#farger" class="drawer-link">Färger</a>
+      <a href="#storlekar" class="drawer-link">Storleksguide</a>
+      <a href="#detaljer" class="drawer-link">Detaljer</a>
+      <a href="#material" class="drawer-link">Varför PP</a>
+      <a href="#kontakt" class="drawer-link">Kontakt</a>
+    </nav>
+    <a href="#" target="_blank" rel="noopener" class="btn btn-wa wa-general" data-wa-icon="18">Chatta med oss</a>
+  </aside>
+
+  <main>
+
+    <!-- ========== HOME ========== -->
+    <div class="view" data-view="home">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <span class="kicker">Nordic Travel Luggage</span>
+            <h1 class="hero-h">Resväskor som<br>tål <em>resan.</em></h1>
+            <p class="hero-p">Hårdskalsväskor i lätt och slagtålig PP-plast – i sex färger och fyra storlekar. Välj din favorit och beställ direkt via WhatsApp.</p>
+            <div class="hero-ctas">
+              <a href="#farger" class="btn btn-primary">
+                Se alla färger
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-wa wa-general" data-wa-icon="18">Beställ via WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <a class="hero-stage" id="heroStage" href="#">
+              <img id="heroImg" src="" alt="">
+            </a>
+            <div class="hero-picker">
+              <div class="swatches" id="heroSwatches" role="radiogroup" aria-label="Välj färg"></div>
+              <a id="heroColorLink" class="hero-color-link" href="#">
+                <span id="heroColorName"></span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="features">
+        <div class="features-inner">
+          <div class="feature">
+            <div class="feature-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.2"/></svg></div>
+            <div><strong>TSA-lås</strong><span>Tullen kan öppna utan att bryta upp väskan.</span></div>
+          </div>
+          <div class="feature">
+            <div class="feature-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></div>
+            <div><strong>360° snurrhjul</strong><span>Fyra dubbla hjul som rullar åt alla håll.</span></div>
+          </div>
+          <div class="feature">
+            <div class="feature-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M8 7l4-4 4 4M8 17l4 4 4-4"/></svg></div>
+            <div><strong>Expanderbar</strong><span>Dragkedja som ger extra packutrymme.</span></div>
+          </div>
+          <div class="feature">
+            <div class="feature-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <div><strong>Slagtåligt PP-skal</strong><span>Lätt, segt och byggt för incheckning.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FÄRGER -->
+      <section class="block" id="farger">
+        <div class="wrap">
+          <div class="block-head">
+            <span class="kicker">Sortiment</span>
+            <h2 class="block-h">Välj din färg</h2>
+            <p class="block-p">Hela setet består av fyra delar: beautybox, kabinväska, mellanstor och stor väska. Tryck på en färg för att se mer.</p>
+          </div>
+          <div class="grid" id="colorGrid"></div>
+        </div>
+      </section>
+
+      <!-- STORLEKAR -->
+      <section class="block block-alt" id="storlekar">
+        <div class="wrap">
+          <div class="block-head center">
+            <span class="kicker">Storleksguide</span>
+            <h2 class="block-h">Vilken storlek behöver du?</h2>
+            <p class="block-p">Från beautybox till storväska – här är alla fyra bredvid varandra, i rätt proportioner.</p>
+          </div>
+          <div class="sg-figs" id="sizeFigs"></div>
+          <div class="sg-cards" id="sizeCards"></div>
+          <p class="sg-note">Mått anges som höjd × bredd × djup. Kontrollera alltid ditt flygbolags regler för handbagage.</p>
+        </div>
+      </section>
+
+      <!-- DETALJER -->
+      <section class="block" id="detaljer">
+        <div class="wrap">
+          <div class="block-head">
+            <span class="kicker">Detaljerna</span>
+            <h2 class="block-h">Byggd för att hålla</h2>
+            <p class="block-p" id="detailsLead">Närbilder på det som gör skillnad när du reser.</p>
+          </div>
+          <div class="details" id="detailsGrid"></div>
+        </div>
+      </section>
+
+      <!-- MATERIAL -->
+      <section class="block block-alt" id="material">
+        <div class="wrap material">
+          <div>
+            <span class="kicker">Material</span>
+            <h2 class="block-h">Varför PP-plast?</h2>
+            <p class="block-p">Skalet är gjort av polypropylen (PP) – samma material som används i många väskor i högre prisklass. PP är segt istället för sprött: vid en smäll ger skalet efter och återtar formen, där billigare ABS-plast kan spricka.</p>
+          </div>
+          <div class="compare">
+            <table>
+              <thead>
+                <tr><th></th><th class="pp">PP <span>(NTL)</span></th><th>ABS <span>(vanligt i billiga väskor)</span></th></tr>
+              </thead>
+              <tbody>
+                <tr><th>Vikt</th><td class="pp">Lättast av de vanliga skalmaterialen</td><td>Lätt, men något tyngre</td></tr>
+                <tr><th>Vid hårda slag</th><td class="pp">Böjer sig och återtar formen</td><td>Styvare – kan spricka</td></tr>
+                <tr><th>Livslängd</th><td class="pp">Tål många incheckningar</td><td>Passar för enstaka resor</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- SÅ BESTÄLLER DU -->
+      <section class="block" id="bestall">
+        <div class="wrap">
+          <div class="block-head center">
+            <span class="kicker">Så funkar det</span>
+            <h2 class="block-h">Beställ på en minut</h2>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <div class="step-n">1</div>
+              <h3>Välj färg och storlek</h3>
+              <p>Hitta din favorit bland färgerna och kolla storleksguiden.</p>
+            </div>
+            <div class="step">
+              <div class="step-n">2</div>
+              <h3>Skicka på WhatsApp</h3>
+              <p>Tryck på knappen – ett färdigt meddelande med din väska skapas åt dig.</p>
+            </div>
+            <div class="step">
+              <div class="step-n">3</div>
+              <h3>Klart!</h3>
+              <p>Vi bekräftar pris, leverans och betalning direkt i chatten.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta">
+        <div class="cta-inner">
+          <h2 class="cta-h">Undrar du något?</h2>
+          <p class="cta-p">Skicka ett meddelande på WhatsApp – vi hjälper dig att välja rätt storlek och färg.</p>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-wa btn-lg wa-general" data-wa-icon="20">Skriv till oss på WhatsApp</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========== PRODUKT ========== -->
+    <div class="view view-product hidden" data-view="product">
+      <div class="wrap" id="productDetail"></div>
+    </div>
+
+    <!-- ========== KONTAKT ========== -->
+    <div class="view hidden" data-view="contact">
+      <section class="contact">
+        <span class="kicker">Kontakt</span>
+        <h1>Hör av dig på WhatsApp</h1>
+        <p>Frågor om storlekar, färger eller leverans? Skriv till oss så svarar vi så snart vi kan.</p>
+        <a href="#" target="_blank" rel="noopener" class="btn btn-wa btn-lg wa-general" data-wa-icon="20">Skicka ett meddelande</a>
+        <div class="socials" id="contactSocials"></div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo-white.png" alt="NTL – Nordic Travel Luggage" class="footer-logo">
+        <p>Resväskor i lätt och slagtålig PP-plast. Beställ enkelt via WhatsApp.</p>
+      </div>
+      <div>
+        <h4>Sortiment</h4>
+        <nav class="footer-links">
+          <a href="#farger">Färger</a>
+          <a href="#storlekar">Storleksguide</a>
+          <a href="#detaljer">Detaljer</a>
+          <a href="#material">Varför PP</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <nav class="footer-links" id="footerContact">
+          <a href="#" target="_blank" rel="noopener" class="wa-general">WhatsApp</a>
+          <a href="#kontakt">Kontaktsida</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> NTL – Nordic Travel Luggage</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Stäng">&times;</button>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="products.js"></script>
+  <script>
+    /* ===== Helpers ===== */
+    const $ = (sel, root = document) => root.querySelector(sel);
+    const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+
+    const waIcon = (size) => `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
+    const arrowIcon = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>`;
+    const checkIcon = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>`;
+
+    const waHref = (text) => {
+      const base = WHATSAPP_NUMBER ? `https://wa.me/${WHATSAPP_NUMBER}` : 'https://wa.me/';
+      return `${base}?text=${encodeURIComponent(text)}`;
+    };
+    const WA_GENERAL = waHref('Hej NTL! Jag har en fråga om era resväskor.');
+
+    const priceNum = (p) => parseInt(String(p || '').replace(/\D/g, ''), 10) || 0;
+    const formatKr = (n) => n.toLocaleString('sv-SE') + ' kr';
+    const fromPrice = (model) => {
+      const nums = model.sizes.map(s => priceNum(s.price)).filter(Boolean);
+      return nums.length ? `Från ${formatKr(Math.min(...nums))}` : 'Pris på förfrågan';
+    };
+    const dimsText = (s) => s.dims ? `${s.dims.join(' × ')} cm` : '';
+    const swatchStyle = (c) => c.accent
+      ? `background: linear-gradient(135deg, ${c.swatch} 50%, ${c.accent} 50%)`
+      : `background: ${c.swatch}`;
+    const productHash = (model, color) => `#produkt/${model.id}/${color.id}`;
+
+    /* ===== Static bits ===== */
+    $$('.wa-general').forEach(a => {
+      a.href = WA_GENERAL;
+      if (a.dataset.waIcon) a.insertAdjacentHTML('afterbegin', waIcon(a.dataset.waIcon));
+    });
+    $('#year').textContent = new Date().getFullYear();
+
+    if (!WHATSAPP_NUMBER) {
+      $('#setupNote').innerHTML = `<div class="setup-note">WhatsApp-nummer saknas – lägg in det i <code>products.js</code></div>`;
+    }
+
+    const socialLinks = [
+      ['instagram', 'Instagram'], ['tiktok', 'TikTok'], ['facebook', 'Facebook']
+    ].filter(([key]) => SOCIAL[key]);
+    $('#contactSocials').innerHTML = socialLinks.map(([key, label]) =>
+      `<a class="social" href="${SOCIAL[key]}" target="_blank" rel="noopener">${label}</a>`
+    ).join('');
+    $('#footerContact').insertAdjacentHTML('beforeend', socialLinks.map(([key, label]) =>
+      `<a href="${SOCIAL[key]}" target="_blank" rel="noopener">${label}</a>`
+    ).join(''));
+
+    /* ===== Hero color switcher ===== */
+    function initHero() {
+      const model = MODELS[0];
+      const img = $('#heroImg');
+      const swatches = $('#heroSwatches');
+      let current = Math.max(0, model.colors.findIndex(c => c.id === 'petrol'));
+      let timer = null;
+
+      swatches.innerHTML = model.colors.map((c, i) =>
+        `<button class="swatch-btn" role="radio" aria-checked="false" aria-label="${c.name}" title="${c.name}" data-i="${i}" style="${swatchStyle(c)}"></button>`
+      ).join('');
+      model.colors.forEach(c => { new Image().src = c.images[0]; });
+
+      function show(i, animate = true) {
+        current = i;
+        const c = model.colors[i];
+        const href = productHash(model, c);
+        $('#heroColorLink').href = href;
+        $('#heroStage').href = href;
+        $('#heroColorName').textContent = `${c.name} – se setet`;
+        $$('.swatch-btn', swatches).forEach((b, n) => b.setAttribute('aria-checked', n === i));
+        img.alt = `${model.name} i ${c.name}`;
+        if (!animate) { img.src = c.images[0]; return; }
+        img.classList.add('fading');
+        setTimeout(() => {
+          img.onload = () => img.classList.remove('fading');
+          img.src = c.images[0];
+          if (img.complete) img.classList.remove('fading');
+        }, 200);
+      }
+
+      swatches.addEventListener('click', e => {
+        const b = e.target.closest('.swatch-btn');
+        if (!b) return;
+        clearInterval(timer);
+        show(+b.dataset.i);
+      });
+
+      show(current, false);
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        timer = setInterval(() => {
+          if (currentView === 'home') show((current + 1) % model.colors.length);
+        }, 4000);
+      }
+    }
+
+    /* ===== Color cards ===== */
+    function colorCard(model, c) {
+      return `
+        <a class="card" href="${productHash(model, c)}">
+          <div class="card-media"><img src="${c.images[0]}" alt="${model.name} i ${c.name}" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-row"><span class="dot" style="${swatchStyle(c)}"></span><h3 class="card-title">${c.name.replace('/', '/<wbr>')}</h3></div>
+            <div class="card-sub">${model.name}</div>
+            <div class="card-price">${fromPrice(model)}</div>
+          </div>
+          <span class="card-arrow">${arrowIcon}</span>
+        </a>`;
+    }
+
+    function renderColorGrid() {
+      $('#colorGrid').innerHTML = MODELS.flatMap(m => m.colors.map(c => colorCard(m, c))).join('');
+    }
+
+    /* ===== Size guide ===== */
+    function suitcaseSVG(s) {
+      const [h, w] = s.dims;
+      const stroke = 'vector-effect="non-scaling-stroke"';
+      if (h < 40) {
+        // Beautybox: no trolley handle or wheels
+        const top = 5, total = h + top;
+        return `
+          <svg viewBox="-1 -1 ${w + 2} ${total + 2}" style="height: calc(var(--s) * ${total}px)" aria-hidden="true">
+            <path class="bh" ${stroke} d="M${w * 0.3} ${top} V${top - 3.4} Q${w * 0.3} 0.6 ${w * 0.36} 0.6 H${w * 0.64} Q${w * 0.7} 0.6 ${w * 0.7} ${top - 3.4} V${top}"/>
+            <rect class="b" ${stroke} x="0" y="${top}" width="${w}" height="${h}" rx="4"/>
+            ${[0.35, 0.55, 0.75].map(f => `<path class="r" ${stroke} d="M${w * 0.14} ${top + h * f} H${w * 0.86}"/>`).join('')}
+          </svg>`;
+      }
+      const handle = h * 0.34, wheel = 4, total = handle + h + wheel;
+      const chevrons = [0.22, 0.34, 0.46, 0.62, 0.74].map(f => {
+        const y = handle + h * f;
+        return `<path class="r" ${stroke} d="M${w * 0.16} ${y} L${w * 0.5} ${y + h * 0.05} L${w * 0.84} ${y}"/>`;
+      }).join('');
+      return `
+        <svg viewBox="-1 -1 ${w + 2} ${total + 2}" style="height: calc(var(--s) * ${total}px)" aria-hidden="true">
+          <rect class="h" x="${w * 0.3}" y="0" width="${w * 0.4}" height="2.6" rx="1.2"/>
+          <rect class="p" x="${w * 0.32}" y="1" width="1.5" height="${handle}"/>
+          <rect class="p" x="${w * 0.68 - 1.5}" y="1" width="1.5" height="${handle}"/>
+          <rect class="b" ${stroke} x="0" y="${handle}" width="${w}" height="${h}" rx="${w * 0.12}"/>
+          ${chevrons}
+          <circle class="h" cx="${w * 0.16}" cy="${handle + h + 1.6}" r="2.4"/>
+          <circle class="h" cx="${w * 0.84}" cy="${handle + h + 1.6}" r="2.4"/>
+        </svg>`;
+    }
+
+    function renderSizeGuide() {
+      const model = MODELS[0];
+      const pieces = model.sizes.filter(s => s.dims).sort((a, b) => a.dims[0] - b.dims[0]);
+      $('#sizeFigs').innerHTML = pieces.map(s => `
+        <div class="sg-fig">
+          ${suitcaseSVG(s)}
+          <div class="sg-fig-label">${s.name}${s.inch ? ` <span>${s.inch}</span>` : ''}</div>
+        </div>`).join('');
+      $('#sizeCards').innerHTML = pieces.map(s => `
+        <div class="sg-card">
+          <h3>${s.name}${s.inch ? `<span>${s.inch}</span>` : ''}</h3>
+          <dl>
+            <dt>Mått</dt><dd>${dimsText(s)}</dd>
+            ${s.volume ? `<dt>Volym</dt><dd>${s.volume}</dd>` : ''}
+            ${s.price ? `<dt>Pris</dt><dd>${s.price}</dd>` : ''}
+          </dl>
+          ${s.use ? `<p class="sg-use">${s.use}</p>` : ''}
+        </div>`).join('');
+    }
+
+    /* ===== Details ===== */
+    function detailFigure(d) {
+      return `
+        <figure class="detail" data-zoom="${d.src}">
+          <div class="detail-img"><img src="${d.src}" alt="${d.title}" loading="lazy"></div>
+          <figcaption><strong>${d.title}</strong><span>${d.text}</span></figcaption>
+        </figure>`;
+    }
+
+    function renderDetails() {
+      const model = MODELS[0];
+      $('#detailsGrid').innerHTML = model.details.map(detailFigure).join('');
+      if (model.detailsColor) {
+        $('#detailsLead').textContent = `Närbilder på det som gör skillnad när du reser. Bilderna visar färgen ${model.detailsColor}.`;
+      }
+    }
+
+    /* ===== Product page ===== */
+    let selectedSize = null;
+
+    function renderProduct(modelId, colorId) {
+      const root = $('#productDetail');
+      const model = MODELS.find(m => m.id === modelId);
+      const color = model && model.colors.find(c => c.id === colorId);
+      if (!color) {
+        root.innerHTML = `
+          <div class="not-found">
+            <h1>Hittade inte väskan</h1>
+            <a href="#farger" class="btn btn-primary">Se alla färger</a>
+          </div>`;
+        return;
+      }
+      if (!model.sizes.some(s => s.id === selectedSize)) selectedSize = model.sizes[0].id;
+
+      const imgs = color.images;
+      const slides = imgs.map(src => `<div class="pd-slide"><img src="${src}" alt="${model.name} i ${color.name}"></div>`).join('');
+      const thumbs = imgs.length > 1
+        ? `<div class="pd-thumbs">${imgs.map((src, i) => `<button class="pd-thumb ${i === 0 ? 'on' : ''}" data-i="${i}" aria-label="Bild ${i + 1}"><img src="${src}" alt=""></button>`).join('')}</div>`
+        : '';
+      const arrows = imgs.length > 1 ? `
+        <button class="pd-nav prev" aria-label="Föregående bild"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="pd-nav next" aria-label="Nästa bild"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>` : '';
+
+      const swatches = model.colors.map(c =>
+        `<a class="swatch-btn" href="${productHash(model, c)}" role="radio" aria-checked="${c.id === color.id}" aria-label="${c.name}" title="${c.name}" style="${swatchStyle(c)}"></a>`
+      ).join('');
+
+      const sizes = model.sizes.map(s => `
+        <button class="size-opt" role="radio" data-size="${s.id}" aria-checked="${s.id === selectedSize}">
+          <span>
+            <span class="size-opt-name">${s.name}</span>
+            <span class="size-opt-sub">${s.detail || [s.inch, dimsText(s)].filter(Boolean).join(' · ')}</span>
+          </span>
+          ${s.price ? `<span class="size-opt-price">${s.price}</span>` : ''}
+        </button>`).join('');
+
+      const others = model.colors.filter(c => c.id !== color.id);
+      const detailsNote = model.detailsColor && model.detailsColor !== color.name
+        ? `<span class="pd-section-note">Detaljbilderna visar färgen ${model.detailsColor}</span>` : '';
+
+      root.innerHTML = `
+        <nav class="breadcrumb" aria-label="Brödsmulor">
+          <a href="#">Hem</a><span>/</span><a href="#farger">Färger</a><span>/</span><span aria-current="page">${color.name}</span>
+        </nav>
+
+        <div class="pd-grid">
+          <div class="pd-gallery">
+            <div class="pd-main" data-i="0" data-total="${imgs.length}">
+              <div class="pd-track">${slides}</div>
+              ${arrows}
+            </div>
+            ${thumbs}
+          </div>
+
+          <div class="pd-info">
+            <span class="kicker">${model.name}</span>
+            <h1 class="pd-title">${color.name}</h1>
+            <div class="pd-price" id="pdPrice"></div>
+            <p class="pd-desc">${model.description}</p>
+
+            <div class="pd-field">
+              <div class="pd-label">Färg <strong>${color.name}</strong></div>
+              <div class="swatches" role="radiogroup" aria-label="Färg">${swatches}</div>
+            </div>
+
+            <div class="pd-field">
+              <div class="pd-label">Storlek</div>
+              <div class="size-list" role="radiogroup" aria-label="Storlek">${sizes}</div>
+            </div>
+
+            <a class="btn btn-wa btn-lg pd-cta" id="pdWa" target="_blank" rel="noopener">${waIcon(20)} Beställ via WhatsApp</a>
+            <p class="pd-note">Du skickar ett färdigt meddelande – vi bekräftar pris, leverans och betalning i chatten.</p>
+
+            <ul class="pd-features">
+              ${model.features.map(f => `<li>${checkIcon}<span>${f}</span></li>`).join('')}
+            </ul>
+            <p class="pd-material">Material: <strong>${model.material}</strong> · <a href="#material">Varför PP?</a></p>
+          </div>
+        </div>
+
+        <section class="pd-section">
+          <div class="pd-section-head">
+            <h2 class="pd-section-h">Detaljerna</h2>
+            ${detailsNote}
+          </div>
+          <div class="details details-sm">${model.details.map(detailFigure).join('')}</div>
+        </section>
+
+        ${others.length ? `
+        <section class="pd-section">
+          <div class="pd-section-head"><h2 class="pd-section-h">Fler färger</h2></div>
+          <div class="grid grid-sm">${others.map(c => colorCard(model, c)).join('')}</div>
+        </section>` : ''}
+
+        <div class="pd-bar">
+          <div class="pd-bar-info">
+            <div class="pd-bar-name" id="pdBarName"></div>
+            <div class="pd-bar-price" id="pdBarPrice"></div>
+          </div>
+          <a class="btn btn-wa" id="pdBarWa" target="_blank" rel="noopener">${waIcon(18)} Beställ</a>
+        </div>
+      `;
+
+      $$('.size-opt', root).forEach(btn => btn.addEventListener('click', () => {
+        selectedSize = btn.dataset.size;
+        updateSelection(model, color);
+      }));
+      attachGallery(root);
+      updateSelection(model, color);
+    }
+
+    function updateSelection(model, color) {
+      const size = model.sizes.find(s => s.id === selectedSize);
+      $$('.size-opt').forEach(b => b.setAttribute('aria-checked', b.dataset.size === selectedSize));
+
+      $('#pdPrice').innerHTML = size.price
+        ? `<span>${size.price}</span>${size.originalPrice ? `<s>${size.originalPrice}</s>` : ''}`
+        : `<span class="ask">Pris på förfrågan</span>`;
+
+      const label = `${size.name}${size.inch ? ` ${size.inch}` : ''}`;
+      const msg = `Hej NTL! Jag är intresserad av ${model.name} i färgen ${color.name} – ${label}${size.price ? ` (${size.price})` : ''}. Finns den i lager?`;
+      $('#pdWa').href = waHref(msg);
+      $('#pdBarWa').href = waHref(msg);
+      $('#pdBarName').textContent = `${color.name} · ${label}`;
+      $('#pdBarPrice').textContent = size.price || 'Pris på förfrågan';
+    }
+
+    function attachGallery(root) {
+      const main = $('.pd-main', root);
+      const track = $('.pd-track', main);
+      const total = +main.dataset.total;
+      const thumbs = $$('.pd-thumb', root);
+      const go = (i) => {
+        i = (i + total) % total;
+        main.dataset.i = i;
+        track.style.transform = `translateX(-${i * 100}%)`;
+        thumbs.forEach((t, n) => t.classList.toggle('on', n === i));
+      };
+      const prev = $('.pd-nav.prev', main), next = $('.pd-nav.next', main);
+      if (prev) prev.addEventListener('click', e => { e.stopPropagation(); go(+main.dataset.i - 1); });
+      if (next) next.addEventListener('click', e => { e.stopPropagation(); go(+main.dataset.i + 1); });
+      thumbs.forEach((t, i) => t.addEventListener('click', () => go(i)));
+      main.addEventListener('click', () => openLightbox($$('.pd-slide img', main)[+main.dataset.i].src));
+
+      let startX = 0;
+      main.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+      main.addEventListener('touchend', e => {
+        const dx = e.changedTouches[0].clientX - startX;
+        if (Math.abs(dx) > 40 && total > 1) go(+main.dataset.i + (dx < 0 ? 1 : -1));
+      });
+    }
+
+    /* ===== Lightbox ===== */
+    const lightbox = $('#lightbox');
+    function openLightbox(src) {
+      $('#lightboxImg').src = src;
+      lightbox.classList.add('on');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      if (!lightbox.classList.contains('on')) return;
+      lightbox.classList.remove('on');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    lightbox.addEventListener('click', e => { if (e.target !== $('#lightboxImg')) closeLightbox(); });
+    document.addEventListener('click', e => {
+      const fig = e.target.closest('[data-zoom]');
+      if (fig) openLightbox(fig.dataset.zoom);
+    });
+
+    /* ===== Drawer ===== */
+    const drawer = $('#drawer'), drawerOverlay = $('#drawerOverlay'), hamburger = $('#hamburger');
+    function openDrawer() {
+      drawer.classList.add('on');
+      drawerOverlay.classList.add('on');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeDrawer() {
+      if (!drawer.classList.contains('on')) return;
+      drawer.classList.remove('on');
+      drawerOverlay.classList.remove('on');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    hamburger.addEventListener('click', () => drawer.classList.contains('on') ? closeDrawer() : openDrawer());
+    drawerOverlay.addEventListener('click', closeDrawer);
+    $('#drawerClose').addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') { closeLightbox(); closeDrawer(); }
+    });
+
+    /* ===== Header shadow ===== */
+    const topnav = $('#topnav');
+    window.addEventListener('scroll', () => topnav.classList.toggle('scrolled', window.scrollY > 8), { passive: true });
+
+    /* ===== Routing ===== */
+    // #farger, #storlekar … scroll to a section on the home view
+    // #produkt/<modell>/<färg> shows a product, #kontakt the contact view
+    const SECTIONS = ['farger', 'storlekar', 'detaljer', 'material', 'bestall'];
+    let currentView = 'home';
+
+    function showView(name) {
+      $$('.view').forEach(v => v.classList.toggle('hidden', v.dataset.view !== name));
+      document.body.classList.toggle('on-product', name === 'product');
+      currentView = name;
+    }
+
+    function setActive(key) {
+      $$('.nav-link, .drawer-link').forEach(a => {
+        a.classList.toggle('active', key !== '' && a.getAttribute('href') === '#' + key);
+      });
+    }
+
+    function navigate() {
+      const hash = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
+      const [section, a, b] = hash.split('/');
+      const prevView = currentView;
+      let view = 'home', scrollTarget = null, active = '';
+
+      if (SECTIONS.includes(section)) {
+        scrollTarget = section;
+        active = section;
+      } else if (section === 'produkt') {
+        view = 'product';
+        active = 'farger';
+        renderProduct(a, b);
+      } else if (section === 'kontakt') {
+        view = 'contact';
+        active = 'kontakt';
+      }
+
+      showView(view);
+      setActive(active);
+      closeDrawer();
+      closeLightbox();
+
+      if (scrollTarget) {
+        requestAnimationFrame(() => {
+          document.getElementById(scrollTarget).scrollIntoView({ behavior: prevView === view ? 'smooth' : 'instant' });
+        });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }
+    }
+
+    // Links to the hash we're already on don't fire hashchange — still close menus / re-scroll
+    document.addEventListener('click', e => {
+      const link = e.target.closest('a[href^="#"]');
+      if (!link) return;
+      const target = link.getAttribute('href');
+      if (target === location.hash || (target === '#' && !location.hash)) {
+        e.preventDefault();
+        navigate();
+      }
+    });
+    window.addEventListener('hashchange', navigate);
+
+    /* ===== Init ===== */
+    renderColorGrid();
+    renderSizeGuide();
+    renderDetails();
+    initHero();
+    navigate();
+  </script>
+</body>
+</html>
