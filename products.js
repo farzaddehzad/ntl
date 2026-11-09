@@ -45,11 +45,11 @@ const MODELS = [
     // OBS: måtten nedan är standardmått för den här typen av set — mät väskorna och justera.
     // Ta bort de storlekar som inte säljs styckvis.
     sizes: [
-      { id: "set",    name: "Komplett set (4 delar)", detail: "Beautybox + kabin + mellan + stor", price: "", originalPrice: "" },
-      { id: "kabin",  name: "Kabinväska",   inch: '20"', dims: [55, 38, 22], volume: "ca 38 L",  use: "Handbagage · 1–4 nätter",       price: "" },
-      { id: "mellan", name: "Mellanstor",   inch: '24"', dims: [65, 44, 26], volume: "ca 65 L",  use: "Incheckat · ungefär en vecka",  price: "" },
-      { id: "stor",   name: "Stor",         inch: '28"', dims: [75, 50, 30], volume: "ca 100 L", use: "Incheckat · två veckor eller mer", price: "" },
-      { id: "beauty", name: "Beautybox",    inch: '14"', dims: [25, 33, 17], volume: "",         use: "Smink, necessär och småsaker",  price: "" }
+      { id: "set",    name: "Komplett set (4 delar)", detail: "Beautybox + kabin + mellan + stor", price: "1 599 kr", originalPrice: "1 999 kr" },  // kampanjpris – ta bort originalPrice när kampanjen är slut
+      { id: "kabin",  name: "Kabinväska",   inch: '20"', dims: [55, 38, 22], volume: "ca 38 L",  use: "Handbagage · 1–4 nätter",       price: "399 kr" },
+      { id: "mellan", name: "Mellanstor",   inch: '24"', dims: [65, 44, 26], volume: "ca 65 L",  use: "Incheckat · ungefär en vecka",  price: "599 kr" },
+      { id: "stor",   name: "Stor",         inch: '28"', dims: [75, 50, 30], volume: "ca 100 L", use: "Incheckat · två veckor eller mer", price: "899 kr" },
+      { id: "beauty", name: "Beautybox",    inch: '14"', dims: [25, 33, 17], volume: "",         use: "Smink, necessär och småsaker",  price: "249 kr" }
     ],
 
     // swatch = färgen på färgpricken. accent (valfritt) = andra färgen för tvåfärgade väskor.
