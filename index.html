@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -123,7 +123,7 @@
           <div class="block-head">
             <span class="kicker">Sortiment</span>
             <h2 class="block-h">Välj din färg</h2>
-            <p class="block-p">Hela setet består av fyra delar: beautybox, kabinväska, mellanstor och stor väska. Tryck på en färg för att se mer.</p>
+            <p class="block-p">Hela setet består av fyra delar: beautybox, kabinväska, mellanstor och stor väska. Tryck på en färg för att se mer. Alla priser är inklusive moms.</p>
           </div>
           <div class="grid" id="colorGrid"></div>
         </div>
@@ -573,7 +573,7 @@
       $$('.size-opt').forEach(b => b.setAttribute('aria-checked', b.dataset.size === selectedSize));
 
       $('#pdPrice').innerHTML = size.price
-        ? `<span>${size.price}</span>${size.originalPrice ? `<s>${size.originalPrice}</s>` : ''}`
+        ? `<span>${size.price}</span>${size.originalPrice ? `<s>${size.originalPrice}</s>` : ''}<small>inkl. moms</small>`
         : `<span class="ask">Pris på förfrågan</span>`;
 
       const label = `${size.name}${size.inch ? ` ${size.inch}` : ''}`;
